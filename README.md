@@ -10,6 +10,7 @@ El diseño del resultado final esperado se encuentra en la carpeta `design`.
 
 ## Instrucciones del proyecto
 
+
 ### Layout | Diseño
 
 El diseño de esta página web debe ser 100% responsive. Debes asegurarte de que el diseño se adapte a diferentes tamaños de pantalla. Para lograr esto, el cliente y tu han acordado que se trabajará con la librería de Bootstrap 5. Para los estilos **que no se puedan** lograr con Bootstrap, puedes utilizar CSS puro.
@@ -28,6 +29,7 @@ A continuación te diremos cuales son los puntos que se tomarán en cuenta para 
 
 - El diseño debe ser 100% responsive.
 - El diseño debe ser lo más fiel posible al proporcionado.
+- El modo oscuro y claro se deben respetar.
 - Las fuentes, tamaños de letra, etc. deben ser los proporcionados en la guia de estilo.
 - El proyecto debe ser desarrollado con Bootstrap 5. Para los estilos **que no se puedan** lograr con Bootstrap, puedes utilizar CSS puro.
 - Los datos deben ser obtenidos desde la API de `rest-countries`.
