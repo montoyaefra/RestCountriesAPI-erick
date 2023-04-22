@@ -6,42 +6,39 @@ const countries = $("#countries")
 
 const newCard = (obj) =>{
     const div = newE("div")
-    div.className = "col card-img card border-0 flex flex-row flex-wrap"
+    div.className = "card-img mb-4 card border-0 rounded-3 carta shadow"
     let html = ""
     
-
-
     html +=`
-    <div class="card-img card-img-modified">
-      <img src="${obj.flags.png}" alt="${obj.name} flag" />
+    <div class=" card-img-modified card-img">
+      <img class="d-flex flex-wrap rounded-3" src="${obj.flags.png}" alt="${obj.name} flag" />
     </div>  
-    <div>
-      <h2>${obj.name.common}</h2>
-      <p>Capital: ${obj.capital}</p>
-      <p>Subregion: ${obj.subregion}</p>
+    <div class="d-flex flex-column text-center">
+      <h4 class="fw-bold ">${obj.name.common}</h4>
+      <p><span class="fw-semibold">Capital:</span> ${obj.capital}</p>
+      <p><span class="fw-semibold">Subregion:</span> ${obj.subregion}</p>
       `
-    
-      
+       
       for (let moneda in obj.currencies) {
-        html += `<p>Currency: ${obj.currencies[moneda].name}</p>`;
+        html += `<p><span class="fw-semibold">Currency:</span> ${obj.currencies[moneda].name}</p>`;
+        break
       }
 
       if (obj.languages) {
-        Object.keys(obj.languages).forEach((key) => {
-          html += `<p>Language: ${obj.languages[key]}</p>`;
-        });
+        const languages = Object.keys(obj.languages).map((key) => obj.languages[key]).join(", ");
+        html += `<p><span class="fw-semibold">Language:</span> ${languages}</p>`;
       }
 
-      if (obj.name.nativeName) {
-        Object.keys(obj.name.nativeName).forEach((key) => {
-          html += `<p>Native Name: ${obj.name.nativeName[key].common}</p>`
-        });
+      const nativeName = obj.name.nativeName;
+      for (let key in nativeName) {
+     html += `<p><span class="fw-semibold">Native Name:</span> ${nativeName[key].common}</p>`;
+       break;
       }
 
-      html += ` 
-      <p>Population: ${obj.population.toLocaleString()}</p>
-    </div>
-  </div>  
+      html += `
+      <p><span class="fw-semibold">Region:</span> ${obj.region}</p>
+      <p><span class="fw-semibold">Population:</span> ${obj.population.toLocaleString()}</p>
+    </div> 
     `
     div.innerHTML = html
     return div
@@ -62,5 +59,4 @@ const showCards = (arr)=>{
 export default {
     $,
     showCards,
-    newE
 }

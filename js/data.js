@@ -7,11 +7,18 @@ const getData = async (URL) => {
   
   }
 
-
-
-
+  const filterByCountry = (arr, filtro) => {
+    let filtered = arr.filter(elem => {
+      return elem.name.toLowerCase().includes(filtro.toLowerCase()) || 
+             elem.region.toLowerCase().includes(filtro.toLowerCase()) ||
+             elem.capital.toLowerCase().includes(filtro.toLowerCase())
+    });
+    return filtered;
+  }
 
 
 export default {
-    getData
+    getData,
+    filterByCountry
+
 }

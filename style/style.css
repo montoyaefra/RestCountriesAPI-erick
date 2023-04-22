@@ -1,0 +1,15 @@
+
+
+
+.card-img, .card {
+    width: 350px;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+}
+
+/* .card img{
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    overflow: hidden; 
+} */
+
