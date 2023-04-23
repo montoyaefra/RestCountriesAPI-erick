@@ -7,9 +7,11 @@ const URL ="https://restcountries.com/v3.1/all"
 const datos = await data.getData(URL)
 
 dom.showCards(datos)
+dom.showModal(datos)
 
 const country = dom.$("#filter")
 const form = dom.$("#form")
+
 
 country.addEventListener("keys", ()=>{
       let filtro = country.value;
@@ -18,3 +20,4 @@ country.addEventListener("keys", ()=>{
     })
 
     
+

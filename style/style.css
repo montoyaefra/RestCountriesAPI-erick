@@ -1,4 +1,8 @@
-
+:root{
+    --color-white1: #FAFAFA;
+    --color-white2: #ffffff;
+    --color-text:#000000;
+}
 
 
 .card-img, .card {
@@ -13,3 +17,6 @@
     overflow: hidden; 
 } */
 
+p {
+    margin-top: -10px;
+}
