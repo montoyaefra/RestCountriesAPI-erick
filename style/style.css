@@ -1,22 +1,29 @@
+/* talvez se utilize */
 :root{
     --color-white1: #FAFAFA;
-    --color-white2: #ffffff;
-    --color-text:#000000;
-}
+} 
 
+[data-bs-theme=dark] .texto {
+    color: var(--color-white1);;
+  }
+  
 
-.card-img, .card {
-    width: 350px;
-    object-fit: cover;
+ .imagen {
     aspect-ratio: 3/2;
 }
 
-/* .card img{
-    aspect-ratio: 3/2;
-    object-fit: cover;
-    overflow: hidden; 
-} */
+.carta {
+    width: 300px;
+}
+
 
 p {
     margin-top: -10px;
 }
+
+.imagen2{
+    width: 450px;
+}
+
+
+
