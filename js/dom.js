@@ -7,7 +7,7 @@ const Modal= $("#Modal")
 
 const newCard = (obj) =>{
     const div = newE("div")
-    div.className = "col  carta  "
+    div.className = "col  carta  mb-4"
     let html = ""
     
     html +=`
