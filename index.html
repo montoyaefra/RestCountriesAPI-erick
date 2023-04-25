@@ -22,16 +22,18 @@
 
     <div class="form-check form-switch pe-5">
       <img class="img" src="./resources/moom.svg" alt="moon">
-      <input id="switch" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
       <label class="form-check-label fw-semibold" for="flexSwitchCheckDefault">Dark Mode</label>
+      <input id="switch" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
     </div>
     
 
   </header>
 
   <main class="mt-5">
-    <div class=" d-flex flex-wrap justify-content-between mb-5 px-5 ">
-      <div class="d-flex flex-wrap input-group border border-2  rounded-3 w-25 white" >
+
+    <div class=" d-flex d flex-wrap justify-content-between mb-5 px-5 row row-cols  row-cols-lg-5 ">
+
+      <div class="d-flex flex-wrap input-group border border-2  rounded-3 w-25 white col" >
         <div class="ps-4 d-flex justify-content-center white">
           <ion-icon class="h-auto" name="search-outline"></ion-icon>
         </div>
@@ -40,7 +42,7 @@
         </form>
       </div>
 
-      <div class="flex flex-wrap  w-25">
+      <div class="flex flex-wrap  w-25 col">
         <select id="region-select" class="form-select form-select-md">
           <option value="">Filter by Region</option>
           <option value="Africa">Africa</option>
@@ -50,6 +52,7 @@
           <option value="Oceania">Oceania</option>
         </select>
       </div>
+      
     </div>
 
     <section>
@@ -60,8 +63,8 @@
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-3" id="exampleModalLabel">Where in the Wolrd</h1>
-              <input id="filter2" class="form-control border border-0 w-25 ms-5 " type="text" placeholder="Search for a country...">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <input id="filter2" class="form-control border  w-25 ms-5 " type="text" placeholder="Search for a country and a region">
+              <button type="button" class="btn-close border" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div id="Modal" class="modal-body">
              
@@ -73,7 +76,7 @@
     </section>
 
     <section class="cointainer">
-      <div id="countries" class=" row row-cols-1 row-cols-md-4 row-cols-lg-5 gap-3 d-flex justify-content-center ">
+      <div id="countries" class=" row row-cols-1 row-cols-md-4 row-cols-lg-5 gap-3 d-flex justify-content-center">
         <!-- aqui van mis cards recordar poner clases a cada card -->
 
 

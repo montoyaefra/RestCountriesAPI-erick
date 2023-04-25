@@ -42,8 +42,6 @@ modalCountry.addEventListener("keyup", () => {
 
 
 
-
-
 //dark mode
 const html = document.querySelector("html")
 console.log(html.dataset);

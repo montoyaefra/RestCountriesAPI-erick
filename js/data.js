@@ -8,8 +8,7 @@ const getData = async (URL) => {
 const filterByCountry = (arr, filtro) => {
   let filtered = arr.filter(elem => {
     return elem.name.common.toLowerCase().includes(filtro.toLowerCase()) || 
-           elem.region.toLowerCase().includes(filtro.toLowerCase()) ||
-           elem.capital?.[0].toLowerCase().includes(filtro.toLowerCase())
+           elem.region.toLowerCase().includes(filtro.toLowerCase())
   });
   return filtered;
 }
