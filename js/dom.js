@@ -14,7 +14,7 @@ const newCard = (obj) =>{
     <div class=" card-img-modified card-img shadow rounded-3 pb-3">
       <img class="d-flex flex-wrap rounded-top-3 rounded-bottom-0 mb-3 card w-100 h-100 imagen" src="${obj.flags.png}" alt="${obj.name} flag" />
     <div class="d-flex flex-column elem">
-      <h5 class="fw-bold mb-4 ps-3">${obj.name.common}</h5>
+      <h5 class=" mb-4 ps-3">${obj.name.common}</h5>
       <p><span class="fw-semibold ps-3">Population:</span> ${obj.population.toLocaleString()}</p>
       <p><span class="fw-semibold ps-3">Capital:</span> ${obj.capital}</p>
       <p><span class="fw-semibold ps-3">Region:</span> ${obj.region}</p>
@@ -51,7 +51,7 @@ const newModal = (obj) =>{
     <img class="d-flex flex-wrap rounded-3 imagen2" src="${obj.flags.png}" alt="${obj.name} flag" />
   </div>  
   <div class="d-flex flex-column text-center mb-5 ps-2">
-  <h4 class="fw-bold pb-3">${obj.name.common}</h4>
+  <h4 class=" pb-3">${obj.name.common}</h4>
   `
   const nativeName = obj.name.nativeName;
     for (let key in nativeName) {
