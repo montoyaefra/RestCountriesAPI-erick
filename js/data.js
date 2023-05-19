@@ -13,7 +13,9 @@ const filterByCountry = (arr, filtro) => {
   return filtered;
 }
 
+
 export default {
   getData,
-  filterByCountry
+  filterByCountry,
+
 }

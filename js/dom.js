@@ -7,19 +7,18 @@ const Modal= $("#Modal")
 
 const newCard = (obj) =>{
     const div = newE("div")
-    div.className = "col  carta  mb-4"
+    div.className = "col  carta  mb-4 countryCard"
+    div.id = obj.name.common
     let html = ""
     
     html +=`
-    <div class=" card-img-modified card-img shadow rounded-3 pb-3">
+    <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-obj="0" class="card-img-modified card-img shadow rounded-3 pb-3">
       <img class="d-flex flex-wrap rounded-top-3 rounded-bottom-0 mb-3 card w-100 h-100 imagen" src="${obj.flags.png}" alt="${obj.name} flag" />
     <div class="d-flex flex-column elem">
       <h5 class=" mb-4 ps-3">${obj.name.common}</h5>
       <p><span class="fw-semibold ps-3">Population:</span> ${obj.population.toLocaleString()}</p>
       <p><span class="fw-semibold ps-3">Capital:</span> ${obj.capital}</p>
       <p><span class="fw-semibold ps-3">Region:</span> ${obj.region}</p>
-      <a  href="##" id="${obj.capital}" class="modal-fullscreen text-dark ps-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-obj="0">
-      <span class="texto">See more</span></a>  
       
       </div>  
     </div>
@@ -43,7 +42,7 @@ const showCards = (arr)=>{
 
 const newModal = (obj) =>{
   const div = newE("div")
-  div.className = "d-flex flex-row justify-content-center align-content-center align-items-center text-center gap-5  mb-5 flex-wrap"
+  div.className = "d-flex flex-row justify-content-center align-content-center align-items-center mt-5 text-center gap-4 mb-5 flex-wrap"
   let html = ""
   
   html +=`
